@@ -15,7 +15,7 @@ export const Heroe = () => {
   if(!hero) {
     return <Navigate to="/marvel" />
   }
-  const imageHeroe = `./heroes/${ id }.jpg`
+  const imageHeroe = `/heroes/${ id }.jpg`
   return (
     <article className=" h-96 flex align-middle justify-center overflow-hidden rounded-lg shadow transition hover:shadow-lg">
       <img
