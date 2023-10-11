@@ -14,9 +14,9 @@ export const Navbar = () => {
   }
   return (
   <nav className="flex border-b">
-    <NavLink className={({isActive}) => `mr-1 text-blue-500 hover:text-blue-800 
+    {/* <NavLink className={({isActive}) => `mr-1 text-blue-500 hover:text-blue-800 
     ${isActive ? '-mb-px bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold': 'bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold'}` } to="/">Asociaciones
-    </NavLink>
+    </NavLink> */}
     <NavLink className={({isActive}) => `mr-1
      ${isActive ? '-mb-px  bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold': 'bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold'}` } to="/marvel">Marvel
     </NavLink>
