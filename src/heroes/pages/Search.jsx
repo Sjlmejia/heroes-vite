@@ -25,7 +25,7 @@ export const Search = () => {
 
   return (
     <>
-      <h1 className="text-3xl flex py-3 justify-center">Search</h1>
+      <h1 className="flex justify-center my-6 font-bold text-2xl">Search</h1>
       <hr />
       <div className="flex">
       <div className="p-5 flex-1">

@@ -8,7 +8,7 @@ export const HeroList = ({publisher}) => {
   const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap justify-center">
       {heroes.map((heroe, id) => {
         return <Card key={id} {...heroe}></Card>
       })}
