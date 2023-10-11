@@ -1,7 +1,9 @@
+import { useContext } from "react";
 import { NavLink, useNavigate } from "react-router-dom"
+import { AuthContext } from "../../auth";
 
 export const Navbar = () => {
-
+  const {user}=useContext(AuthContext);
   const navigate = useNavigate();
 
   const onLogout = () => {
@@ -24,7 +26,7 @@ export const Navbar = () => {
     </NavLink>
     <div className="flex justify-end w-4/5 pr-5">
       <span>
-        Jorge Mejia
+        {user?.name}
         <button 
           className=" border rounded bg-blue-500 ml-5 text-white px-3"
           onClick={onLogout}
