@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Card = ({id,superhero, alter_ego, characters }) => {
   
-  const imageHeroe = `/assets/heroes/${ id }.jpg`
+  const imageHeroe = `/heroes/${ id }.jpg`
   return (
     <Link to={`/heroe/${id}`} className="block mr-4">
       <img
